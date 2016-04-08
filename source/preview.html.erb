@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <script>var autotune = <%= data.autotune.to_json %></script>
+  <head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= data.autotune.title %></title>
+
+    <%= stylesheet_link_tag "custom" %>
+  
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <%= javascript_include_tag "pym.js" %>
+    <div class="custom-widget pulseimage"> 
+      <div class="pulse-container hide">
+          <img id="base_image" class="pulse-image" src="<%= data.autotune.base_image.image_url %>">
+          <div class="pulse hide" data-top="<%= data.autotune.pulse_1.top %>" data-left="<%= data.autotune.pulse_1.left %>" image-url="<%= data.autotune.pulse_1.pulse_url %>" data-url="<%= data.autotune.pulse_1.data_url %>"></div>
+          <div class="pulse hide" data-top="<%= data.autotune.pulse_2.top %>" data-left="<%= data.autotune.pulse_2.left %>" image-url="<%= data.autotune.pulse_2.pulse_url %>" data-url="<%= data.autotune.pulse_2.data_url %>"></div>
+          <div class="pulse hide" data-top="<%= data.autotune.pulse_3.top %>" data-left="<%= data.autotune.pulse_3.left %>" image-url="<%= data.autotune.pulse_3.pulse_url %>" data-url="<%= data.autotune.pulse_3.data_url %>"></div>
+          <div class="pulse hide" data-top="<%= data.autotune.pulse_4.top %>" data-left="<%= data.autotune.pulse_4.left %>" image-url="<%= data.autotune.pulse_4.pulse_url %>" data-url="<%= data.autotune.pulse_4.data_url %>"></div>
+          <div class="pulse hide" data-top="<%= data.autotune.pulse_5.top %>" data-left="<%= data.autotune.pulse_5.left %>" image-url="<%= data.autotune.pulse_5.pulse_url %>" data-url="<%= data.autotune.pulse_5.data_url %>"></div>
+          <div class="pulse hide" data-top="<%= data.autotune.pulse_6.top %>" data-left="<%= data.autotune.pulse_6.left %>" image-url="<%= data.autotune.pulse_6.pulse_url %>" data-url="<%= data.autotune.pulse_6.data_url %>"></div>
+
+      <div class="popup">
+        <div class="close">X</div>
+        <span class="helper"></span><img id="popup_image" class="popup-image" src="">  
+      </div>
+ 
+      </div>
+    <div class="tapbutton hide">Not compatible<br> with your browser</div>
+   <%= javascript_include_tag "pulseimage.js" %></script>
+ </div>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "base_image": {
+    "image_url": "http://media1.s-nbcnews.com/j/newscms/2016_10/1009046/backpack-items-base-image-1-top-today-160311_ded1f3f8f85b1fcfbd56471c47f8c8cc.today-inline-large2x.jpg"
+  },
+  "pulse_1": {
+    "image_url": "http://media1.s-nbcnews.com/j/newscms/2016_10/1009071/frostbitten-babies-today-160311_ded1f3f8f85b1fcfbd56471c47f8c8cc.today-inline-large2x.jpg",
+    "data_url": "",
+    "top": "50",
+    "left": "30"
+  },
+  "pulse_2": {
+    "image_url": "http://media3.s-nbcnews.com/j/newscms/2016_10/1009081/hungry-bellies-today-160311_ded1f3f8f85b1fcfbd56471c47f8c8cc.today-inline-large2x.jpg",
+    "data_url": "",
+    "top": "90",
+    "left": "70"
+  },
+  "pulse_3": {
+    "image_url": "http://media1.s-nbcnews.com/j/newscms/2016_10/1009141/carrying-hope-today-160311_2b9944ef5cb52927022f6599aca8279e.today-inline-large2x.jpg",
+    "data_url": "",
+    "top": "34",
+    "left": "60"
+  },
+  "pulse_4": {
+    "image_url": "",
+    "data_url": "http://today.com",
+    "top": "50",
+    "left": "50"
+  },
+  "pulse_5": {
+    "image_url": "",
+    "data_url": "",
+    "top": "",
+    "left": ""
+  },
+  "pulse_6": {
+    "image_url": "",
+    "data_url": "",
+    "top": "",
+    "left": ""
+  },
+  "title": "Backpacks test",
+  "slug": "backpacks-test",
+  "theme": "default"
+}

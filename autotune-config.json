@@ -13,267 +13,264 @@
         "Andrew Pinzler <andrew.pinzler@nbcuni.com>"
     ],
     "form": {
-      "schema": {
-        "title": "TODAY Pulse Widget Test",
-        "description": "interactive pulse images",
-        "type": "object",
-        "properties": {
-          "base_image": {
-            "title": "Base Image",
+        "schema": {
+            "title": "TODAY Pulse Widget Test",
+            "description": "interactive pulse images",
             "type": "object",
             "properties": {
-              "image_url": {
-                "title": "Base Image",
-                "format": "uri",
-                "required": true
-              },
+                "base_image": {
+                    "title": "Base Image",
+                    "type": "object",
+                    "properties": {
+                        "image_url": {
+                            "title": "Base Image",
+                            "format": "uri",
+                            "required": true
+                        }
+                    }
+                },
+                "pulse_1": {
+                    "title": "First Pulse",
+                    "type": "object",
+                    "properties": {
+                        "image_url": {
+                            "title": "First pulse - image",
+                            "format": "uri",
+                            "required": false
+                        },
+                        "data_url": {
+                            "title": "First pulse - link out",
+                            "format": "uri",
+                            "required": false
+                        },
+                        "top": {
+                            "title": "Pulse placement from the top (scale of 1-99)",
+                            "type": "string"
+                        },
+                        "left": {
+                            "title": "Pulse placement from the left (scale of 1-99)",
+                            "type": "string"
+                        }
+                    }
+                },
+                "pulse_2": {
+                    "title": "Second Pulse",
+                    "type": "object",
+                    "properties": {
+                        "image_url": {
+                            "title": "pulse - image url",
+                            "format": "uri",
+                            "required": false
+                        },
+                        "data_url": {
+                            "title": "pulse - link out",
+                            "format": "uri",
+                            "required": false
+                        },
+                        "top": {
+                            "title": "Pulse placement from the top (scale of 1-99)",
+                            "type": "string"
+                        },
+                        "left": {
+                            "title": "Pulse placement from the left (scale of 1-99)",
+                            "type": "string"
+                        }
+                    }
+                },
+                "pulse_3": {
+                    "title": "Third Pulse",
+                    "type": "object",
+                    "properties": {
+                        "image_url": {
+                            "title": "pulse - image url",
+                            "format": "uri",
+                            "required": false
+                        },
+                        "data_url": {
+                            "title": "pulse - link out",
+                            "format": "uri",
+                            "required": false
+                        },
+                        "top": {
+                            "title": "Pulse placement from the top (scale of 1-99)",
+                            "type": "string"
+                        },
+                        "left": {
+                            "title": "Pulse placement from the left (scale of 1-99)",
+                            "type": "string"
+                        }
+                    }
+                },
+                "pulse_4": {
+                    "title": "Fourth Pulse",
+                    "type": "object",
+                    "properties": {
+                        "image_url": {
+                            "title": "pulse - image url",
+                            "format": "uri",
+                            "required": false
+                        },
+                        "data_url": {
+                            "title": "pulse - link out",
+                            "format": "uri",
+                            "required": false
+                        },
+                        "top": {
+                            "title": "Pulse placement from the top (scale of 1-99)",
+                            "type": "string"
+                        },
+                        "left": {
+                            "title": "Pulse placement from the left (scale of 1-99)",
+                            "type": "string"
+                        }
+                    }
+                },
+                "pulse_5": {
+                    "title": "Fifth Pulse",
+                    "type": "object",
+                    "properties": {
+                        "image_url": {
+                            "title": "pulse - image url",
+                            "format": "uri",
+                            "required": false
+                        },
+                        "data_url": {
+                            "title": "pulse - link out",
+                            "format": "uri",
+                            "required": false
+                        },
+                        "top": {
+                            "title": "Pulse placement from the top (scale of 1-99)",
+                            "type": "string"
+                        },
+                        "left": {
+                            "title": "Pulse placement from the left (scale of 1-99)",
+                            "type": "string"
+                        }
+                    }
+                },
+                "pulse_6": {
+                    "title": "Sixth Pulse",
+                    "type": "object",
+                    "properties": {
+                        "image_url": {
+                            "title": "pulse - image url",
+                            "format": "uri",
+                            "required": false
+                        },
+                        "data_url": {
+                            "title": "pulse - link out",
+                            "format": "uri",
+                            "required": false
+                        },
+                        "top": {
+                            "title": "Pulse placement from the top (scale of 1-99)",
+                            "type": "string"
+                        },
+                        "left": {
+                            "title": "Pulse placement from the left (scale of 1-99)",
+                            "type": "string"
+                        }
+                    }
+                }
             }
-          },
-          "pulse_1": {
-            "title": "First Pulse",
-            "type": "object",
-            "properties": {
-              "image_url": {
-                "title": "First pulse - image",
-                "format": "uri",
-                "required": false
-              },
-              "data_url": {
-                "title": "First pulse - link out",
-                "format": "uri",
-                "required": false
-              },
-              "top": {
-                "title": "Pulse placement from the top (scale of 1-99)",
-                "type": "string"
-              },
-              "left": {
-                "title": "Pulse placement from the left (scale of 1-99)",
-                "type": "string"
-              }
+        },
+        "options": {
+            "fields": {
+                "base_image": {
+                    "fields": {
+                        "image_url": {
+                            "type": "url",
+                            "label": "URL",
+                            "helper": ""
+                        }
+                    }
+                },
+                "pulse_1": {
+                    "fields": {
+                        "image_url": {
+                            "type": "url",
+                            "label": "URL",
+                            "helper": "Images should be the same size and dimensions as the base image.  Pulses can either show and image or link out, not both."
+                        },
+                        "data_url": {
+                            "type": "url",
+                            "label": "URL",
+                            "helper": "Pulses can either show and image or link out, not both."
+                        }
+                    }
+                },
+                "pulse_2": {
+                    "fields": {
+                        "image_url": {
+                            "type": "url",
+                            "label": "URL",
+                            "helper": "Images should be the same size and dimensions as the base image.  Pulses can either show and image or link out, not both."
+                        },
+                        "data_url": {
+                            "type": "url",
+                            "label": "URL",
+                            "helper": "Pulses can either show and image or link out, not both."
+                        }
+                    }
+                },
+                "pulse_3": {
+                    "fields": {
+                        "image_url": {
+                            "type": "url",
+                            "label": "URL",
+                            "helper": "Images should be the same size and dimensions as the base image.  Pulses can either show and image or link out, not both."
+                        },
+                        "data_url": {
+                            "type": "url",
+                            "label": "URL",
+                            "helper": "Pulses can either show and image or link out, not both."
+                        }
+                    }
+                },
+                "pulse_4": {
+                    "fields": {
+                        "image_url": {
+                            "type": "url",
+                            "label": "URL",
+                            "helper": "Images should be the same size and dimensions as the base image.  Pulses can either show and image or link out, not both."
+                        },
+                        "data_url": {
+                            "type": "url",
+                            "label": "URL",
+                            "helper": "Pulses can either show and image or link out, not both."
+                        }
+                    }
+                },
+                "pulse_5": {
+                    "fields": {
+                        "image_url": {
+                            "type": "url",
+                            "label": "URL",
+                            "helper": "Images should be the same size and dimensions as the base image.  Pulses can either show and image or link out, not both."
+                        },
+                        "data_url": {
+                            "type": "url",
+                            "label": "URL",
+                            "helper": "Pulses can either show and image or link out, not both."
+                        }
+                    }
+                },
+                "pulse_6": {
+                    "fields": {
+                        "image_url": {
+                            "type": "url",
+                            "label": "URL",
+                            "helper": "Images should be the same size and dimensions as the base image.  Pulses can either show and image or link out, not both."
+                        },
+                        "data_url": {
+                            "type": "url",
+                            "label": "URL",
+                            "helper": "Pulses can either show and image or link out, not both."
+                        }
+                    }
+                }
             }
-          },
-          "pulse_2": {
-            "title": "Second Pulse",
-            "type": "object",
-            "properties": {
-              "image_url": {
-                "title": "pulse - image url",
-                "format": "uri",
-                "required": false
-              },
-              "data_url": {
-                "title": "pulse - link out",
-                "format": "uri",
-                "required": false
-              },
-              "top": {
-                "title": "Pulse placement from the top (scale of 1-99)",
-                "type": "string"
-              },
-              "left": {
-                "title": "Pulse placement from the left (scale of 1-99)",
-                "type": "string"
-              }
-            }
-          },
-          "pulse_3": {
-            "title": "Third Pulse",
-            "type": "object",
-            "properties": {
-              "image_url": {
-                "title": "pulse - image url",
-                "format": "uri",
-                "required": false
-              },
-              "data_url": {
-                "title": "pulse - link out",
-                "format": "uri",
-                "required": false
-              },
-              "top": {
-                "title": "Pulse placement from the top (scale of 1-99)",
-                "type": "string"
-              },
-              "left": {
-                "title": "Pulse placement from the left (scale of 1-99)",
-                "type": "string"
-              }
-            }
-          },
-          "pulse_4": {
-            "title": "Fourth Pulse",
-            "type": "object",
-            "properties": {
-              "image_url": {
-                "title": "pulse - image url",
-                "format": "uri",
-                "required": false
-              },
-              "data_url": {
-                "title": "pulse - link out",
-                "format": "uri",
-                "required": false
-              },
-              "top": {
-                "title": "Pulse placement from the top (scale of 1-99)",
-                "type": "string"
-              },
-              "left": {
-                "title": "Pulse placement from the left (scale of 1-99)",
-                "type": "string"
-              }
-            }
-          },
-          "pulse_5": {
-            "title": "Fifth Pulse",
-            "type": "object",
-            "properties": {
-              "image_url": {
-                "title": "pulse - image url",
-                "format": "uri",
-                "required": false
-              },
-              "data_url": {
-                "title": "pulse - link out",
-                "format": "uri",
-                "required": false
-              },
-              "top": {
-                "title": "Pulse placement from the top (scale of 1-99)",
-                "type": "string"
-              },
-              "left": {
-                "title": "Pulse placement from the left (scale of 1-99)",
-                "type": "string"
-              }
-            }
-          },
-          "pulse_6": {
-            "title": "Sixth Pulse",
-            "type": "object",
-            "properties": {
-              "image_url": {
-                "title": "pulse - image url",
-                "format": "uri",
-                "required": false
-              },
-              "data_url": {
-                "title": "pulse - link out",
-                "format": "uri",
-                "required": false
-              },
-              "top": {
-                "title": "Pulse placement from the top (scale of 1-99)",
-                "type": "string"
-              },
-              "left": {
-                "title": "Pulse placement from the left (scale of 1-99)",
-                "type": "string"
-              }
-            }
-          },
-
-          
         }
-      },
-      "options": {
-        "fields": {
-          "base_image": {
-            "fields": {
-              "image_url": {
-                "type": "url",
-                "label": "URL",
-                "helper": ""
-              }
-            }
-          },
-          "pulse_1": {
-            "fields": {
-              "image_url": {
-                "type": "url",
-                "label": "URL",
-                "helper": "Images should be the same size and dimensions as the base image.  Pulses can either show and image or link out, not both."
-              },
-              "data_url": {
-                "type": "url",
-                "label": "URL",
-                "helper": "Pulses can either show and image or link out, not both."
-              }
-            }
-          },
-          "pulse_2": {
-            "fields": {
-              "image_url": {
-                "type": "url",
-                "label": "URL",
-                "helper": "Images should be the same size and dimensions as the base image.  Pulses can either show and image or link out, not both."
-              },
-              "data_url": {
-                "type": "url",
-                "label": "URL",
-                "helper": "Pulses can either show and image or link out, not both."
-              }
-            }
-          },
-          "pulse_3": {
-            "fields": {
-              "image_url": {
-                "type": "url",
-                "label": "URL",
-                "helper": "Images should be the same size and dimensions as the base image.  Pulses can either show and image or link out, not both."
-              },
-              "data_url": {
-                "type": "url",
-                "label": "URL",
-                "helper": "Pulses can either show and image or link out, not both."
-              }
-            }
-          },
-          "pulse_4": {
-            "fields": {
-              "image_url": {
-                "type": "url",
-                "label": "URL",
-                "helper": "Images should be the same size and dimensions as the base image.  Pulses can either show and image or link out, not both."
-              },
-              "data_url": {
-                "type": "url",
-                "label": "URL",
-                "helper": "Pulses can either show and image or link out, not both."
-              }
-            }
-          },
-          "pulse_5": {
-            "fields": {
-              "image_url": {
-                "type": "url",
-                "label": "URL",
-                "helper": "Images should be the same size and dimensions as the base image.  Pulses can either show and image or link out, not both."
-              },
-              "data_url": {
-                "type": "url",
-                "label": "URL",
-                "helper": "Pulses can either show and image or link out, not both."
-              }
-            }
-          },
-          "pulse_6": {
-            "fields": {
-              "image_url": {
-                "type": "url",
-                "label": "URL",
-                "helper": "Images should be the same size and dimensions as the base image.  Pulses can either show and image or link out, not both."
-              },
-              "data_url": {
-                "type": "url",
-                "label": "URL",
-                "helper": "Pulses can either show and image or link out, not both."
-              }
-            }
-          },
-          
-        }
-      }
     }
 }

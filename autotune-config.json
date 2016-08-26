@@ -3,7 +3,6 @@
     "description": "Testing converting a custom widget to a blueprint",
     "instructions": "\n",
     "preview_type": "live",
-    "themes": ["general"],
     "sample_data": "data/autotune.json",
     "type": "graphic",
     "tags": [

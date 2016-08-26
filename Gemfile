@@ -9,9 +9,11 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 # Middleman Gems
-gem 'middleman'
-    
+#gem 'middleman', '3.7.3'
+gem 'middleman',
+    git: 'https://github.com/ryanmark/middleman.git',
+    branch: 'v3-shared-source'    
 gem 'middleman-livereload'
-gem 'middleman-compass'
+#gem 'middleman-compass'
 
 gem 'therubyracer', :platforms => :ruby

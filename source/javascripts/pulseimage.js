@@ -41,6 +41,7 @@ window.onload = function() {
     $('.close', '.pulse-container').click(function() {
       var $this = $(this);
       $this.parent().fadeOut();
+      $this.parent().children('#popup_image').attr('src', 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');
       $this.parent().parent().children('#base_image').removeClass('darken');
     });
 

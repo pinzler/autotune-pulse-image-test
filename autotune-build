@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BUILD_COMMAND="bundle exec middleman build"
+BUILD_COMMAND="bundle exec middleman build --verbose"
 INPUT_DATA=$(</dev/stdin)
 SAVE_DATA_TO=data/autotune.json
 
